@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Hi, I’m Your Name</h1>
+    <p>IT student learning how to build and deploy websites.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About me</h2>
+      <p>I study at your school name. I’m learning HTML, CSS and JavaScript, and this page is deployed with GitHub Pages and Docker.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li><strong>Project one</strong> A short description of what it does.</li>
+        <li><strong>Project two</strong> A short description of what it does.</li>
+        <li><strong>Project three</strong> A short description of what it does.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:you@example.com">you@example.com</a></p>
+      <button id="greet">Say hello</button>
+      <p id="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>Made with HTML, CSS and JavaScript</footer>
+
+  <script>
+    document.getElementById("greet").addEventListener("click", function () {
+      document.getElementById("message").textContent = "Hello! Thanks for visiting.";
+    });
+  </script>
+</body>
+</html>
